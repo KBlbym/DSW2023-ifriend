@@ -1,0 +1,21 @@
+{
+    "name": "juego/ifriend",
+    "description": "app de juego de amigo invisible",
+    "type": "project",
+    "autoload": {
+        "psr-4": {
+            "Juego\\Ifriend\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "khalifa boulbayem",
+            "email": "khalifablbm@gmail.com"
+        }
+    ],
+    "require": {
+        "jenssegers/blade": "^2.0",
+        "illuminate/database": "^10.40",
+        "altorouter/altorouter": "^2.0"
+    }
+}
