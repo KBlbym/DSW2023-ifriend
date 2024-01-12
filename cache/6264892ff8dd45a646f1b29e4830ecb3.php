@@ -8,4 +8,4 @@
 <body>
     <h1>Hello from view</h1>
 </body>
-</html>
+</html><?php /**PATH C:\laragon\www\DSW2023-ifriend\src\views/default.blade.php ENDPATH**/ ?>

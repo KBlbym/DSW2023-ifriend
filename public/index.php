@@ -1,15 +1,17 @@
 <?php
-
-use Philo\Blade\Blade;
+use Jenssegers\Blade\Blade;
 
 require_once "../vendor/autoload.php";
 //blade
-// $views = "../src/views";
-// $cache = "../cache";
+$views = "../src/views";
+$cache = "../cache";
 
-// $blade = new Blade($views, $cache);
+$blade = new Blade($views, $cache);
 
-$namespace = "Juego\\Ifriend\\";
+$dotenv = Dotenv\Dotenv::createImmutable("../");
+$dotenv->load();
+$namespace = $_ENV['NAMESPACE'];
+echo $namespace;
 // Router system
 $router = new AltoRouter();
 // List of routes

@@ -1,2 +1,2 @@
 <?php
-$router->map('GET', '/', 'DefaultController#index', 'index');
+$router->map('GET', '/', 'HomeController#index', 'index');
