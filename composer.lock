@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "4abf3bacd2f5b58070345b9cd1ada6c6",
+    "content-hash": "c2a74d2050eef73fadf96fa66525032a",
     "packages": [
         {
             "name": "altorouter/altorouter",
@@ -646,16 +646,16 @@
         },
         {
             "name": "illuminate/database",
-            "version": "v10.40.0",
+            "version": "v10.41.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/illuminate/database.git",
-                "reference": "d41a5b7b1dc67bf640f16bf50c376b29ba575da5"
+                "reference": "f7a7d35dec5e7c6c4711cde31119f67d06846459"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/illuminate/database/zipball/d41a5b7b1dc67bf640f16bf50c376b29ba575da5",
-                "reference": "d41a5b7b1dc67bf640f16bf50c376b29ba575da5",
+                "url": "https://api.github.com/repos/illuminate/database/zipball/f7a7d35dec5e7c6c4711cde31119f67d06846459",
+                "reference": "f7a7d35dec5e7c6c4711cde31119f67d06846459",
                 "shasum": ""
             },
             "require": {
@@ -715,7 +715,7 @@
                 "issues": "https://github.com/laravel/framework/issues",
                 "source": "https://github.com/laravel/framework"
             },
-            "time": "2024-01-07T15:44:56+00:00"
+            "time": "2024-01-16T14:41:20+00:00"
         },
         {
             "name": "illuminate/events",

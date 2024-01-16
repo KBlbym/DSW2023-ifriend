@@ -11,7 +11,7 @@ $blade = new Blade($views, $cache);
 $dotenv = Dotenv\Dotenv::createImmutable("../");
 $dotenv->load();
 $namespace = $_ENV['NAMESPACE'];
-echo $namespace;
+//echo $namespace;
 // Router system
 $router = new AltoRouter();
 // List of routes

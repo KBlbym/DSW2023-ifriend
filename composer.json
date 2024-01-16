@@ -15,7 +15,7 @@
     ],
     "require": {
         "jenssegers/blade": "^2.0",
-        "illuminate/database": "^10.40",
+        "illuminate/database": "^10.41",
         "altorouter/altorouter": "^2.0",
         "vlucas/phpdotenv": "^5.6"
     }
