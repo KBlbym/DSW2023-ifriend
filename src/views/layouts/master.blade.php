@@ -8,8 +8,8 @@
   </head>
   <body>
     @include("layouts.header")
-    <h1>@yield("title")</h1>
     <div class="container">
+    <h1>@yield("title")</h1>
       @section("content")
       <h2>Página no encontrada</h2>
 
