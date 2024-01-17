@@ -23,7 +23,7 @@
       <td>{{$user->name}}</td>
       <td>{{$user->password}}</td>
       <td>{{$user->mail}}</td>
-      <td><a href="/user/{{$user->id}}/delete" class="btn btn-danger">Eliminar</a></td>
+      <td><a href="{{$router->generate('user_delete',['id' => $user->id])}}" class="btn btn-danger">Eliminar</a></td>
     </tr>
     @endforeach
   </tbody>

@@ -1,10 +1,10 @@
 <?php
 namespace Juego\Ifriend\Controllers;
 
-class HomeController {
+class HomeController extends Controller{
   
   public function index() {
-    global $blade;
-    echo $blade->make('index')->render();
+    $router = $this->router;
+    echo $this->blade->make('index', compact("router"))->render();
   }
 }
