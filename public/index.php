@@ -2,6 +2,9 @@
 use Jenssegers\Blade\Blade;
 
 require_once "../vendor/autoload.php";
+
+session_start();
+
 //blade
 $views = "../src/views";
 $cache = "../cache";

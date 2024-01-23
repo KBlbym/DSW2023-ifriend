@@ -9,9 +9,11 @@
         <li class="nav-item">
           <a class="nav-link active" aria-current="page" href="#">Home</a>
         </li>
+        @isset($_SESSION["id"])
         <li class="nav-item">
           <a class="nav-link" href="{{$router->generate('user')}}">Users</a>
         </li>
+        @endisset
         <li class="nav-item dropdown">
           <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
             Dropdown
@@ -27,10 +29,16 @@
           <a class="nav-link disabled" aria-disabled="true">Disabled</a>
         </li>
       </ul>
-      <form class="d-flex" role="search">
-        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-        <button class="btn btn-outline-success" type="submit">Search</button>
+      @if(isset($_SESSION['id']))
+      <span style="padding-right: 20px;">{{$_SESSION["user"]}}</span>
+      <button class="btn btn-danger"><a class="nav-link" href="{{$router->generate('logout')}}">Logout</a></button>
+      @else
+      <form class="d-flex" role="login" method="post" action="{{$router->generate('validate')}}">
+        <input class="form-control me-2" type="text" placeholder="User" aria-label="User" name="user">
+        <input class="form-control me-2" type="password" placeholder="Password" aria-label="Password" name="password">
+        <button class="btn btn-outline-success" type="submit">Login</button>
       </form>
+      @endif
     </div>
   </div>
 </nav>
