@@ -10,6 +10,15 @@ if(isset($_SESSION["id"])){
   $router->map('POST', '/user', 'UserController#post', 'user_post');
   $router->map('GET', '/user/[i:id]', 'UserController#edit', 'user_edit');
   $router->map('POST', '/user/[i:id]', 'UserController#update', 'user_update');
+ 
+ 
+ 
+  $router->map('GET', '/game', 'GameController#index', 'game');
+  $router->map('POST', '/game', 'GameController#post', 'game_post');
+  $router->map('GET', '/game/[i:id]/delete', 'GameController#delete', 'game_delete');
+
+
+  $router->map('GET', '/usergame', 'UsergameController#index', 'usergame');
   
 }
 
